@@ -1,0 +1,19 @@
+"pages"
+,"uid","pid","title"
+,1,0,"page 1"
+"tt_content"
+,"uid","pid","CType","pages"
+# Default config: allowed is pages
+# Ok page 1
+,1,1,"text","1"
+# Missing page 5 is removed
+,2,1,"text",""
+# columnsOverrides: allowed is tt_content
+# Ok tt_content 1
+,3,1,"header","1"
+# Ok tt_content 2, no page 2
+,4,1,"header","2"
+# Missing tt_content 5 is removed
+,5,1,"header",""
+# Missing tt_content 5 is removed, others kept
+,6,1,"header","1,2"
